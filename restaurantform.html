@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Form</title>
+    <style>
+       
+        .flex-container {
+            display: flex;
+            /* Makes the container a flexbox */
+            gap: 10px;
+            /* Adds space between the text boxes */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="center-image">
+            <img src="Images/RestaurantLogo.jpg" alt="Logo" width="150" height="150">
+            <h1>Reserve Your Table</h1>
+        </div>
+    </header>
+    <div class="flex-container">
+        <label for="name">Name</label>
+        <input type="text" name="firstname" placeholder="First Name" required>
+        <input type="text" name="lastname" placeholder="Last Name">
+    </div>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+    <br>
+    <label for="phone">Phone Number</label>
+    <input type="tel" name="phone" id="phone">
+    <hr>
+    <label for="drpdwn">Number of Guests: </label>
+    <select name="dropdown" id="dropdown">
+        <option value="title">Please Select</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <br>
+    <label for="radio">Select your option</label>
+    <br>
+    <input type="radio" id="party" name="party" value="formal">
+    <label for="party">Party</label><br>
+    <input type="radio" id="casual" name="casual" value="casual">
+    <label for="casual">Casual</label><br>
+    <br>
+    <label for="radio">Select your Diet preference</label>
+    <br>
+    <input type="checkbox" id="veg" name="veg" value="veg">
+    <label for="veg">Vegetarian</label><br>
+    <input type="checkbox" id="nonveg" name="nonveg" value="nonveg">
+    <label for="nonveg">Non-Vegetarian</label><br>
+    <input type="checkbox" id="vegan" name="vegan" value="vegan">
+    <label for="vegan">Vegan</label><br>
+    <br>
+    <label for="datetime">Reservation Date & Time</label>
+    <input type="datetime" name="datetime" id="datetime">
+    <br>
+    <label for="textarea">Special Notes</label>
+    <br>
+    <textarea id="textarea" name="textarea" rows="5" cols="33"></textarea>
+    <br>
+    <button type="button" name="button" id="button">Reserve</button>
+
+</body>
+
+</html>
